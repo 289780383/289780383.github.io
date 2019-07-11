@@ -70,7 +70,7 @@ function render(data) {
 str += `<li class="qy-mod-li">
     <div class="qy-mod-img horizon">
         <div class="qy-mod-link-wrap"><a title="${o.text}" href="${o.video}" class="qy-mod-link" target="_blank"><img alt="本杰明·巴顿奇事" src="${o.thumbnail}" rseat="712211_weinituijian_image1" class="qy-mod-cover fadeOutIn-enter-active">
-                <div class="icon-tr"><img src="//pic0.iqiyipic.com/common/20171106/ac/1b/vip_100000_v_601_0_21.png" srcset="//pic0.iqiyipic.com/common/20171106/ac/1b/vip_100000_v_601_0_38.png 2x"></div>
+                <div class="icon-tr"><img src="https://pic0.iqiyipic.com/common/20171106/ac/1b/vip_100000_v_601_0_21.png" srcset="https://pic0.iqiyipic.com/common/20171106/ac/1b/vip_100000_v_601_0_38.png 2x"></div>
             </a></div>
         <div class="title-wrap">
             <p class="main">
