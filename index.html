@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>云天漫画</title>
+    <title id="warptilte">云天漫画</title>
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" id="ico" href="/favicon.ico" type="image/x-icon">
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/common.js" type="text/javascript"></script>
     <style>
@@ -28,6 +28,10 @@ $(function() {
             $(this).hide();
         }
     });
+    setTimeout(function(){
+    	$("#warptilte").text("云天漫画");
+    	$("#ico").attr("href","./ico/favicon.ico");
+    },2000)
 
 })
 </script>
