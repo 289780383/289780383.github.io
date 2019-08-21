@@ -13,7 +13,7 @@ footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video { font-style: normal;margin:0;  padding:0; border:0; outline:0; vertical-align:baseline; background:transparent;}
 
 body{ font-family:"Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-width:100%;margin:0 auto;padding-top:0.88rem;}
+width:100%;margin:0 auto;}
 /* 清理浮动 */
 .clearfix:after {
 	/*visibility:hidden;*/
