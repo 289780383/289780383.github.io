@@ -16,16 +16,16 @@
         position: absolute;
     }
 
-    body .search-icon,
-    body .ift-message,
-    .handlebox .read,
-    body .you{
+    #warp .search-icon,
+    #warp .ift-message,
+    #warp .mk-detail .handlebox .read,
+    #warp .you{
         display: none;
     }
     </style>
 </head>
 
-<body>
+<body id="warp">
     <iframe src="https://m.3li.cc/"></iframe>
 </body>
 <script>
@@ -38,7 +38,7 @@ $(function() {
     setTimeout(function() {
         $("#warptilte").text("云天漫画");
         $("#ico").attr("href", "./ico/favicon.ico");
-    }, 2000)
+    }, 1000)
 
 })
 </script>
