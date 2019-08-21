@@ -15,6 +15,13 @@
         height: 100%;
         position: absolute;
     }
+
+    body .search-icon,
+    body .ift-message,
+    .handlebox .read,
+    body .you{
+        display: none;
+    }
     </style>
 </head>
 
@@ -28,10 +35,10 @@ $(function() {
             $(this).hide();
         }
     });
-    setTimeout(function(){
-    	$("#warptilte").text("云天漫画");
-    	$("#ico").attr("href","./ico/favicon.ico");
-    },2000)
+    setTimeout(function() {
+        $("#warptilte").text("云天漫画");
+        $("#ico").attr("href", "./ico/favicon.ico");
+    }, 2000)
 
 })
 </script>
