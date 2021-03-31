@@ -1,46 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title id="warptilte">云天漫画</title>
-    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="shortcut icon" id="ico" href="/favicon.ico" type="image/x-icon">
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/common.js" type="text/javascript"></script>
-    <style>
-    iframe {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-
-    #warp .search-icon,
-    #warp .ift-message,
-    #warp .mk-detail .handlebox .read,
-    #warp .you{
-        display: none;
-    }
-    </style>
-</head>
-
-<body id="warp">
-    <iframe src="https://m.3li.cc/"></iframe>
-</body>
-<script>
-$(function() {
-    $("body div").each(function(e, i) {
-        if ($(this).css("clear") == "both") {
-            $(this).hide();
+<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>vue</title><script>var GE = {
+      SYS_ROOT: "./html/ge/", // GE系统根目录
+      CELL_ROOT: "./html/cell/", // GE图元存放根目录
+      IS_EDITOR: true, // 是否编辑器，编辑器比展示器加载的代码多
+      PAGE_FORMAT: [1024, 512], // 编辑器打开时的默认页面长宽
+      //HIGHLIGHT: '#00F', // 展示器中活跃图元在鼠标指向时的高亮颜色，注释掉则不高亮
+      // 部分图元在本项目中的参数配置，对于在此处没有定义的其他图元，则取默认值
+      CELL_CONFIG: {
+        变量: {
+          文本1: {
+            show: true, // "false"表示不显示在编辑器图元列表中，"true/未定义"表示显示在列表中
+            width: 80, // 图元宽度
+            height: 30, // 图元高度
+            align: 'center', // 左中右对齐方式, 'left', 'center'，'right'
+            // rounded: 0, // "0/无定义"表示边框无圆角 ">0"表示边框有圆角且圆角半径为rounded，当color中border有效时此参数才有意义
+            fontSize: 18, // 字体大小
+            color: {
+              // 正常状态颜色
+              normal: {
+                // border: "#000", // 边框，"none/无定义"表示没有边框
+                fill: "#A9C4EB", // 填充
+                // fill2: "#7ea6e0", // 如果定义了fill2则表示要从上fill向下渐变到fill2
+                font: "#666", // 字体
+              },
+              // 报警状态颜色
+              alarm: {
+                // border: "none", // "none/无定义"表示没有边框
+                fill: "#A9C4EB",
+                // fill2: "#800", // 如果定义了fill2则表示要从上fill向下渐变到fill2
+                font: "#ff0000",
+              },
+              // 通信错误颜色
+              commErr: {
+                // border: "none", // "none/无定义"表示没有边框
+                fill: "#A9C4EB",
+                // fill2: "#808", // 如果定义了fill2则表示要从上fill向下渐变到fill2
+                font: "#FF8000",
+              },
+            }
+          },
+          水浸绳1: {
+            show: false, // "false"表示不显示在编辑器图元列表中，"true/未定义"表示显示在列表中
+          },
+          选项二1: {
+            show: false, // "false"表示不显示在编辑器图元列表中，"true/未定义"表示显示在列表中
+          },
+          进度条1: {
+            show: false, // "false"表示不显示在编辑器图元列表中，"true/未定义"表示显示在列表中
+          },
+          遥控1: {
+            // show: false, // "false"表示不显示在编辑器图元列表中，"true/未定义"表示显示在列表中
+            width: 120, // 图元宽度
+            height: 40, // 图元高度
+            align: 'center', // 左中右对齐方式, 'left', 'center'，'right'
+            rounded: 12, // "0/无定义"表示边框无圆角 ">0"表示边框有圆角且圆角半径为rounded，当color中border有效时此参数才有意义
+            fontSize: 18, // 字体大小
+            text: "闭合", // 默认文字
+            color: {
+              // border: "#000", // "none/无定义"表示没有边框
+              fill: "#39F", // 按钮底色
+              // fill2: "#168", // 如果定义了fill2则表示要从上fill向下渐变到fill2
+              font: "#FFC", // 字颜色
+            },
+          },
+          // 其他没有在此设置的图元，以默认方式显示
         }
-    });
-    setTimeout(function() {
-        $("#warptilte").text("云天漫画");
-        $("#ico").attr("href", "./ico/favicon.ico");
-    }, 1000)
-
-})
-</script>
-
-</html>
+      },
+    }
+    window.onload = function () {
+      var head = document.getElementsByTagName('head')[0];
+      // 加载GE系统
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = GE.SYS_ROOT + "index.js";
+      head.appendChild(script);
+    }</script><link href=/css/chunk-1c8bc923.471c535d.css rel=prefetch><link href=/css/chunk-60063045.0c3a79cc.css rel=prefetch><link href=/css/chunk-7a6bbf18.1a627a30.css rel=prefetch><link href=/js/chunk-1c8bc923.631f6d62.js rel=prefetch><link href=/js/chunk-60063045.cdbf61a8.js rel=prefetch><link href=/js/chunk-7a6bbf18.a75f87bd.js rel=prefetch><link href=/css/app.f736d2a7.css rel=preload as=style><link href=/css/chunk-vendors.16eda2b2.css rel=preload as=style><link href=/js/app.60b7a843.js rel=preload as=script><link href=/js/chunk-vendors.d9e811a2.js rel=preload as=script><link href=/css/chunk-vendors.16eda2b2.css rel=stylesheet><link href=/css/app.f736d2a7.css rel=stylesheet></head><body><noscript><strong>We're sorry but vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.d9e811a2.js></script><script src=/js/app.60b7a843.js></script></body></html>
