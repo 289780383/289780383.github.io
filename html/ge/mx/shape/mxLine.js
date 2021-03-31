@@ -1,0 +1,1 @@
+function mxLine(e,t,i,n){mxShape.call(this),this.bounds=e,this.stroke=t,this.strokewidth=null!=i?i:1,this.vertical=null!=n?n:this.vertical}mxUtils.extend(mxLine,mxShape),mxLine.prototype.vertical=!1,mxLine.prototype.paintVertexShape=function(e,t,i,n,o){if(e.begin(),this.vertical){var l=t+n/2;e.moveTo(l,i),e.lineTo(l,i+o)}else{l=i+o/2;e.moveTo(t,l),e.lineTo(t+n,l)}e.stroke()};

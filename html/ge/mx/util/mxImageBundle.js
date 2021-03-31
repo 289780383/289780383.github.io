@@ -1,0 +1,1 @@
+function mxImageBundle(l){this.images=[],this.alt=null!=l&&l}mxImageBundle.prototype.images=null,mxImageBundle.prototype.alt=null,mxImageBundle.prototype.putImage=function(l,e,a){this.images[l]={value:e,fallback:a}},mxImageBundle.prototype.getImage=function(l){var e=null;if(null!=l){var a=this.images[l];null!=a&&(e=this.alt?a.fallback:a.value)}return e};

@@ -1,0 +1,1 @@
+mxCodecRegistry.register(function(){var e=new mxObjectCodec(new mxDefaultPopupMenu);return e.encode=function(e,n){return null},e.decode=function(e,n,u){var t=n.getElementsByTagName("include")[0];return null!=t?this.processInclude(e,t,u):null!=u&&(u.config=n),u},e}());

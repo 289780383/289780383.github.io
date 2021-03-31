@@ -1,0 +1,1 @@
+var mxStencilRegistry={stencils:{},addStencil:function(t,e){mxStencilRegistry.stencils[t]=e},getStencil:function(t){return mxStencilRegistry.stencils[t]}};

@@ -1,0 +1,1 @@
+mxCodecRegistry.register(new mxObjectCodec(new mxGraph,["graphListeners","eventListeners","view","container","cellRenderer","editor","selection"]));

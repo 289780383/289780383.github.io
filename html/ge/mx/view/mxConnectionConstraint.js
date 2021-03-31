@@ -1,0 +1,1 @@
+function mxConnectionConstraint(n,t,o,i,e){this.point=n,this.perimeter=null==t||t,this.name=o,this.dx=i||0,this.dy=e||0}mxConnectionConstraint.prototype.point=null,mxConnectionConstraint.prototype.perimeter=null,mxConnectionConstraint.prototype.name=null,mxConnectionConstraint.prototype.dx=null,mxConnectionConstraint.prototype.dy=null;

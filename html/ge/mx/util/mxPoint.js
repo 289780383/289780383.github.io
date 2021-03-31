@@ -1,0 +1,1 @@
+function mxPoint(t,n){this.x=null!=t?t:0,this.y=null!=n?n:0}mxPoint.prototype.x=null,mxPoint.prototype.y=null,mxPoint.prototype.equals=function(t){return null!=t&&t.x==this.x&&t.y==this.y},mxPoint.prototype.clone=function(){return mxUtils.clone(this)};

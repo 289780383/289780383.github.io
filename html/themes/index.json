@@ -1,0 +1,30 @@
+[
+  {
+    "name": "科技感",
+    "image": "/html/themes/1.jpg"
+  },
+  {
+    "name": "大海",
+    "image": "/html/themes/2.jpg"
+  },
+  {
+    "name": "天空",
+    "image": "/html/themes/3.jpg"
+  },
+  {
+    "name": "秋色",
+    "image": "/html/themes/4.jpg"
+  },
+  {
+    "name": "水果",
+    "image": "/html/themes/5.jpg"
+  },
+  {
+    "name": "云",
+    "image": "/html/themes/6.jpg"
+  },
+  {
+    "name": "清新",
+    "image": "/html/themes/7.jpg"
+  }
+]

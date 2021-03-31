@@ -1,0 +1,1 @@
+mxCodecRegistry.register(function(){var e=new mxObjectCodec(new mxTerminalChange,["model","previous"],["cell","terminal"]);return e.afterDecode=function(e,r,n){return n.previous=n.terminal,n},e}());

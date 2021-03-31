@@ -1,0 +1,1 @@
+function mxEllipse(l,t,e,i){mxShape.call(this),this.bounds=l,this.fill=t,this.stroke=e,this.strokewidth=null!=i?i:1}mxUtils.extend(mxEllipse,mxShape),mxEllipse.prototype.paintVertexShape=function(l,t,e,i,s){l.ellipse(t,e,i,s),l.fillAndStroke()};
